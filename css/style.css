@@ -1,0 +1,53 @@
+#imageRow {position: relative; left: -80px;
+	margin-left: 60px}
+
+#directions {
+	background: #f3f3c7;
+	padding: 20px;
+}
+
+.navbar-header {
+	position: relative; left: -20px;
+	background: orange;
+	font-size: 30px;
+	padding-bottom: 20px;
+	line-height: 36px
+}
+
+body {background: #2af0e0;}
+
+.container-fluid {
+	position: relative; left: 20px;
+	background: #2af0e0;
+	border: #2af0e0;
+}
+
+.p {
+	margin:10px;
+}
+
+#winloss {
+position: relative; left: 90px;
+	height: 60px;
+	margin-left:20px;
+	background: teal;
+}
+
+#randomNum {
+	position: relative; left: 40px;
+	background: olive;
+	width: 160px;
+	height: 60px;
+}
+
+#yourscore {
+	background: teal;
+	height: 20px;
+	width: 160px;
+}
+
+#scoreCounter {
+	background: teal;
+	height: 90px;
+	width: 160px;
+}
