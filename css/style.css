@@ -1,53 +1,74 @@
-#imageRow {position: relative; left: -80px;
-	margin-left: 60px}
+
 
 #directions {
 	background: #f3f3c7;
 	padding: 20px;
 }
 
-.navbar-header {
-	position: relative; left: -20px;
+#header, footer {
+	border: 3px solid red;
 	background: orange;
-	font-size: 30px;
-	padding-bottom: 20px;
-	line-height: 36px
+	font-size: 20px;
 }
 
-body {background: #2af0e0;}
+body {background: mediumpurple;}
 
-.container-fluid {
-	position: relative; left: 20px;
-	background: #2af0e0;
-	border: #2af0e0;
+h2 {
+	margin-left: 80px;
+	padding-bottom: 10px
 }
 
 .p {
 	margin:10px;
 }
 
+#wins, #losses {
+	font-weight: bold;
+}
+
 #winloss {
-position: relative; left: 90px;
-	height: 60px;
+
+	height: 120px;
 	margin-left:20px;
 	background: teal;
 }
 
-#randomNum {
-	position: relative; left: 40px;
+.randomNum {
+	
 	background: olive;
-	width: 160px;
-	height: 60px;
+	height: 120px;
 }
 
 #yourscore {
 	background: teal;
-	height: 20px;
-	width: 160px;
+	margin: 5px;
+		margin-top: 20px;
+	height: 60px;
 }
 
 #scoreCounter {
+	margin: 5px;
+	margin-top: 20px;
 	background: teal;
-	height: 90px;
-	width: 160px;
+	height: 60px;
 }
+
+#yourscore, #scoreCounter {
+  font-weight: bold;
+}
+
+#winsLosses {
+	height: 100px;
+}
+
+#foot {
+	padding-top: 15px;
+}
+
+img {
+	margin: 10px;
+	background: mediumpurple;
+	height: 100px;
+}
+
+button {background: mediumpurple;}

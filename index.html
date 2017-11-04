@@ -3,42 +3,30 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>About | Tom Nelson</title>
-<link rel="stylesheet" type="text/css" href="css/reset.css">
+  <title>Crystal Game</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-  <script>src="game.js"</script>
+
 
 </head>
 
 <body>
-      <!-- Set name up to be col-4 in md, col-3 in sm, and col-12 in xs....Will need to stack over navs in xs 
-      Figure out how to unstack name in larger screens-->
 
-      <div class="container-fluid">
-          <div class="container">
-          
+    <div class="row">        
+      <div class="col-lg-12" id="header">
+          <div class="col-lg-1"></div>
+          <h2>
+            Crystals Collector!
+          </h2>                   
+      </div>
+    </div>
+    <br>
              
-                <div class="navbar-header">
-              
-                  <div class="col-md-4 col-sm-4 col-xs-4">
-                   <h1>
-                     Crystals Collector!
-                    </h1>
-                  </div>
-                
-             
-          
-          </div>
-        </div>
-           
-      <br>
-      <br>      
-              
-     <div class="container" >
+    
         <div class="row">
-              <div class="col-md-6 col-sm-6 col-xs-6" id=directions>
+              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">   </div>        
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" id="directions">
                 <p class="text-left">
                 You will be given a random number at the start of the game.
                 </p>
@@ -56,90 +44,86 @@
                 </p>
               </div>
              </div>
-          </div>    
+            
   <br>
 <br>
 
         
-               <div class="row">
-                  <div class="col-md-3 col-sm-3 col-xs-3" id=randomNum >
-
+               <div class="row" id="winsLosses">
+                  <div class="col-lg-1">   </div> 
+                    <div class="col-lg-2">
+                      <!--    Insert the random cumulative crystal value  -->
+                      <h3 class="randomNum">  </h3>
+                    </div>
+                  <div class="col-lg-1">   </div> 
+                  <div class="col-lg-2" id="winloss">
+                        <p class="text-center" id="wins">
+                            Wins: 
+                        </p>
+                        <p class="text-center" id="wincounter">
+                            
+                        </p>  
+                        <p class="text-center" id="losses">
+                            Losses: 
+                        </p>
+                        <p class="text-center" id="lossCounter">
+                       
+                        </p>
                   </div>
-                 
-                  <div class="col-md-2 col-sm-2 col-xs-2" id=winloss>
-                    <p class="text-center" id=wins>
-                    Wins: 
+                </div>
 
-                    </p>
-                    <p class="text-center" id=losses>
-                    Losses: 
-                    </p>
-                  </div>
-             </div>
-          </div>   
-
-      <!-- BEGIN BODY  -->
-      <div class="container">
-        <!--BODY ROW BEGIN  -->
-        <div class="row">
-          <!-- LEFT HAND SIDE CONTENT  -->
 <br>       
 <br>
 
 
-      
-            <div class=row id=imageRow>
-              <div class=container>
-              <div class="col-md-8 col-sm-8 col-xs-8">
-                <button class="col-md-2 col-xs-2">
-                  <img src="images/green.jpeg" id=crystalFour class=crystalButton alt="Green Crystal" width=75 height=75 />
-                </button>
 
-                <button class="col-md-2 col-xs-2">
-                  <img src="images/yellow.jpeg" id=crystalThree class=crystalButton alt="Yellow Crystal" width=75 height=75 />
+
+          <div class="row">
+            <div class="col-lg-1" id="imageRow"></div>
+                <button class="col-lg-2"> <img src="images/green.jpeg" id="crystalFour" alt="Green Crystal"/>
                 </button>
-                <button class="col-md-2 col-xs-2">
-                 <img src="images/red.jpeg" id=crystalTwo class=crystalButton alt="Red Crystal" width=75 height=75 />
+              
+                <button class="col-lg-2"><img src="images/yellow.jpeg" id="crystalThree" class=crystalButton alt="Yellow Crystal"/>
                 </button>
-                <button class="col-md-2 col-xs-2">
-                  <img src="images/blue.jpeg" id=crystalOne class=crystalButton alt="Blue Crystal"  width=75 height=75 />
+          
+                <button class="col-lg-2">
+                 <img src="images/red.jpeg" id=crystalTwo class="crystalButton" alt="Red Crystal" />
+                </button>
+           
+                <button class="col-lg-2">
+                  <img src="images/blue.jpeg" id=crystalOne class="crystalButton" alt="Blue Crystal"/>
                 </button>
           </div>
-        </div>
-      
+       
+        
 
+            <div class="row">
+              <div class="col-lg-1"></div>
+                <div class="col-lg-2" id="yourscore">
+                   <h4 class="text-center">
+                   Your total score is:
+                    </h4>
+                  </div>
+                 
+                  <div class="col-lg-2" >
+                    <h4 class="text-center" id="scoreCounter">
+                
+                    </h4>
+                  </div>    
+            </div>
+            
+<br>
 <br>
 <br>
 
-
-<br>
-<br>
-
-
-<br>
-<br>
       <!-- END RIGHT HAND SIDE CONTENT  -->
-          <footer class="col-xs-12">
-            <div class="container-fluid">
-              <div class="panel-footer"> 
-                <p class="text-center"> Copyright &copy; 2016 Tom Nelson</p></div>
-            </div> 
+          <footer class="col-lg-12">
+            <p class="text-center" id=foot > Copyright &copy; 2016 Tom Nelson</p>
           </footer>
 
- 
-
-
-    <!--BODY ROW END  -->
-    
-    
-      <!--END BODY  -->
-
- <script type="text/javascript" src="javascript/<game.js"></script>
-
+        <script type="text/javascript" src="javascript/game.js"></script>
       <!-- Bootstrap JavaScript CDN -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   </body>
-
 </html>
