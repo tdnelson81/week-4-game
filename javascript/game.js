@@ -25,16 +25,16 @@
 
  // restart game
  		var restart = function (){
- 			scoreCounter = 0;
- 			randomNum = Math.floor((Math.random() * 100) + 19);
+			 scoreCounter = 0;
+			 randomNum = Math.floor((Math.random() * 100) + 19);
+			 
+				$('.randomNum').empty();
+				$('.randomNum').append(randomNum);
 
- 			$('#randomNum').empty();
- 			$('#randomNum').append(randomNum);
-
- 			var crystalFour = Math.floor((Math.random() * 12) + 1);
- 			var crystalThree = Math.floor((Math.random() * 12) + 1);
- 			var crystalTwo = Math.floor((Math.random() * 12) + 1);
- 			var crystalOne = Math.floor((Math.random() * 12) + 1);
+		var crystalFour = Math.floor((Math.random() * 12) + 1);
+ 		var crystalThree = Math.floor((Math.random() * 12) + 1);
+ 		var crystalTwo = Math.floor((Math.random() * 12) + 1);
+ 		var crystalOne = Math.floor((Math.random() * 12) + 1);
  			counters();
  		}	
 
@@ -45,7 +45,8 @@
 			 alert("You win!");
  			restart();
  		} else if (scoreCounter > randomNum) {
- 			lossCounter = lossCounter + 1;
+			 lossCounter = lossCounter + 1;
+			 alert("You lost");
  			restart();
  		} else {
  			counters();
